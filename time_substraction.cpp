@@ -9,15 +9,7 @@ int  main()
 	cin >> hr2>>min2;
 	t1=(hr1*60)+min1;
 	t2=(hr2*60)+min2;
-	if(t1>t2)
-	{
-	    time=t1-t2;
-	}
-	else
-	{
-	    time=t2-t1;
-	}
-	
+	    time=abs(t1-t2);    
 	hr = time/60;
 	min = time%60;
 	cout<<"time"<<hr<<" hours "<<min<<" minutes ";
